@@ -1,0 +1,24 @@
+﻿<Window x:Class="Market_Core.AddShops"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Market_Core"
+        mc:Ignorable="d"
+        Title="AddShops" Height="450" Width="800" Loaded="win_Loaded">
+    <Grid>
+        <TextBox x:Name="IdShop_Text" HorizontalAlignment="Left" Margin="568,98,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="AmountProduct_Text" HorizontalAlignment="Left" Margin="568,199,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="RetailPrice_Text" HorizontalAlignment="Left" Margin="568,245,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Id shops" HorizontalAlignment="Left" Margin="587,67,0,0" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0.424,1.427"/>
+        <Label Content="Id department" HorizontalAlignment="Left" Margin="578,112,0,0" VerticalAlignment="Top" Width="94"/>
+        <Label Content="Amount product" HorizontalAlignment="Left" Margin="568,168,0,0" VerticalAlignment="Top" Width="104"/>
+        <Label Content="Retail price" HorizontalAlignment="Left" Margin="563,219,0,0" VerticalAlignment="Top" Width="107" RenderTransformOrigin="0.424,1.427"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="580,335,0,0" VerticalAlignment="Top" Height="37" Width="90" Click="Button_Click"/>
+        <DataGrid x:Name="DataGridAddShop" Margin="61,129,300,109"/>
+        <Label Content="Добавление записи в магазин" HorizontalAlignment="Left" Margin="324,40,0,0" VerticalAlignment="Top" Width="176" RenderTransformOrigin="0.424,1.427"/>
+        <ComboBox Name="comboIdDepartment" HorizontalAlignment="Left" Margin="568,138,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Id_Bases_TextBox" HorizontalAlignment="Left" Margin="568,294,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Id Bases" HorizontalAlignment="Left" Margin="565,263,0,0" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.424,1.427"/>
+    </Grid>
+</Window>

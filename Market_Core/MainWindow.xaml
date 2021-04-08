@@ -1,0 +1,26 @@
+﻿<Window x:Class="Market_Core.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Market_Core"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+  <Menu Height="25" VerticalAlignment="Top">
+            <MenuItem Header="Формы">
+                <MenuItem Header="Добавления">
+                    <MenuItem Header="Добавить новую запись в таблицу 'Магазин'" Click="MenuItem_AddShop_Click"></MenuItem>
+                    <MenuItem Header="Добавить новую запись в таблицу 'Торговые базы'" Click="MenuItem_AddBases_Click"></MenuItem>
+                    <MenuItem Header="Добавить новый товар в таблицу 'Продукт'" Click="MenuItem_Product_Click"  ></MenuItem>
+                    <MenuItem Header="Добавить новый отдел в таблицу 'Отдел'" Click="MenuItem_Otdel_Click"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Отобразить Магазин" Click="MenuItem_Store_Click" ></MenuItem>
+                <Separator />
+                <MenuItem Header="Exit" ></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Edit" ></MenuItem>
+            <MenuItem Header="View" ></MenuItem>
+        </Menu>
+    </Grid>
+</Window>
