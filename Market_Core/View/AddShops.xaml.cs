@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Market_Core
+namespace Market_Core.View
 {
     /// <summary>
     /// Логика взаимодействия для AddShops.xaml
