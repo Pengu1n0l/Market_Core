@@ -1,0 +1,27 @@
+﻿<Window x:Class="Market_Core.View.AddSupply"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Market_Core.View"
+        mc:Ignorable="d"
+        Title="AddSupply" Height="450" Loaded="Window_Loaded" Width="800">
+    <Grid>
+        <DataGrid x:Name="datagridSupply" HorizontalAlignment="Left" Height="200" Margin="88,0,0,0" VerticalAlignment="Center" Width="419"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,42,0,0" Text="Добавление нового договора" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="594,147,0,0" Text="Номер магазина" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="593,93,0,0" Text="Номер торговой базы" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="640,197,0,0" Text="Отдел" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="Department_Textbox" HorizontalAlignment="Left" Margin="596,218,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="623,355,0,0" VerticalAlignment="Top" Height="35" Width="86" Click="Button_Click"/>
+        <ComboBox Name="comboboxShop" HorizontalAlignment="Left" Margin="595,169,0,0" VerticalAlignment="Top" Width="120" />
+        <ComboBox Name="comboboxBase" HorizontalAlignment="Left" Margin="593,115,0,0" VerticalAlignment="Top" Width="120"/>
+        <DatePicker Name="DateTimeSupplys" HorizontalAlignment="Left" Margin="598,313,0,0" VerticalAlignment="Top" Width="118"/>
+        <TextBox Name="Name_productTextbox" HorizontalAlignment="Left" Margin="597,280,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Название продукта" HorizontalAlignment="Left" Margin="598,249,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="Document_TextBox" HorizontalAlignment="Left" Margin="589,69,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.125,0.559"/>
+        <TextBlock HorizontalAlignment="Left" Margin="595,48,0,0" Text="Номер документа" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <ComboBox Name="ComboboxDepartment" HorizontalAlignment="Left" Margin="144,53,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

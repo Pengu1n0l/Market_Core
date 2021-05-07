@@ -24,6 +24,7 @@ namespace Market_Core.View
         public Otdel()
         {
             InitializeComponent();
+            ShowDepartmentList();
         }
 
         private void Button_Click_AddNewOtdel(object sender, RoutedEventArgs e)

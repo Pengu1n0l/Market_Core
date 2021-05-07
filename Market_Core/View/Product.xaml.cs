@@ -21,6 +21,7 @@ namespace Market_Core.View
         public Product()
         {
             InitializeComponent();
+            ShowDataProduct();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

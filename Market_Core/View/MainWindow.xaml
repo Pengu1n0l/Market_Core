@@ -14,13 +14,19 @@
                     <MenuItem Header="Добавить новую запись в таблицу 'Торговые базы'" Click="MenuItem_AddBases_Click"></MenuItem>
                     <MenuItem Header="Добавить новый товар в таблицу 'Продукт'" Click="MenuItem_Product_Click"  ></MenuItem>
                     <MenuItem Header="Добавить новый отдел в таблицу 'Отдел'" Click="MenuItem_Otdel_Click"></MenuItem>
+                    <MenuItem Header="Добавить новый договор в таблицу 'Договор'" Click="MenuItem_Supply_Click"></MenuItem>
                 </MenuItem>
                 <MenuItem Header="Отобразить Магазин" Click="MenuItem_Store_Click" ></MenuItem>
+               
                 <Separator />
                 <MenuItem Header="Exit" ></MenuItem>
             </MenuItem>
-            <MenuItem Header="Edit" ></MenuItem>
-            <MenuItem Header="View" ></MenuItem>
+            <MenuItem Header="Запросы" >
+                <MenuItem Header="Отобразить продукты магазинов ниже 200 руб " Click="MenuItem_Query1_Click"></MenuItem>
+                <MenuItem Header="Отобразить Договор о поставке продукта из торговой базы в магазин" Click="MenuItem_Querry_Click" ></MenuItem>
+                <MenuItem Header="Отобразить розничную и оптовую цену продукта "  Click="MenuItem_Querry3_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Отчёт" ></MenuItem>
         </Menu>
     </Grid>
 </Window>

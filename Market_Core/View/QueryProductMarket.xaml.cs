@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -15,11 +16,19 @@ namespace Market_Core.View
     /// <summary>
     /// Логика взаимодействия для Query.xaml
     /// </summary>
-    public partial class Query : Window
+    public partial class QueryProductMarket : Window
     {
-        public Query()
+        public QueryProductMarket()
         {
-            InitializeComponent();
+            InitializeComponent(); 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            using (AppContext context = new AppContext())
+            {
+                dataGride_Show.ItemsSource= context.Shop.Where(x => x.Retail_price > 200).ToList();
+            }
         }
     }
 }

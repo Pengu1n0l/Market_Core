@@ -27,25 +27,20 @@ namespace Market_Core.View
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+           
             using (AppContext appContext = new AppContext())
             {
-
 
                 var shop = new Shops
                 {
                     id_shop = Convert.ToInt32(IdShop_Text.Text),
+
                     id_department = Convert.ToInt32(comboIdDepartment.SelectedItem),
+                    id_product = Convert.ToInt32(product_Textbox.Text),
                     Amount_product = Convert.ToInt32(AmountProduct_Text.Text),
                     Retail_price = Convert.ToDecimal(RetailPrice_Text.Text)
                 };
-                var relationships = new Shop_Bases
-                {
-                    id_shop = Convert.ToInt32(IdShop_Text.Text),
-                    id_bases = Convert.ToInt32(Id_Bases_TextBox.Text)
-                };
-               
                 appContext.Shop.Add(shop);
-                appContext.Shop_Base.Add(relationships);
                 appContext.SaveChanges();
                 ShowShopsList();
             }

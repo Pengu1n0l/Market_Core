@@ -62,5 +62,33 @@ namespace Market_Core.View
             this.Close();
             add.Show();
         }
+
+        private void MenuItem_Supply_Click(object sender, RoutedEventArgs e)
+        {
+            AddSupply add = new AddSupply();
+            this.Close();
+            add.Show();
+        }
+
+        private void MenuItem_Query1_Click(object sender, RoutedEventArgs e)
+        {
+            QueryProductMarket query = new QueryProductMarket();
+            Close();
+            query.Show();
+        }
+
+        private void MenuItem_Querry_Click(object sender, RoutedEventArgs e)
+        {
+            QueryShowShopAndBase query= new QueryShowShopAndBase();
+            Close();
+            query.Show();
+        }
+
+        private void MenuItem_Querry3_Click(object sender, RoutedEventArgs e)
+        {
+            QueryPriceProduct query = new QueryPriceProduct();
+            Close();
+            query.Show();
+        }
     }
 }

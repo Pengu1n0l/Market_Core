@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Market_Core.property_classes;
 
 namespace Market_Core
 {
@@ -12,7 +13,8 @@ namespace Market_Core
         public DbSet<Shops> Shop { get; set; }
         public DbSet<Bases> Base { get; set; }
         public DbSet<Products> Product { get; set; }
-        public DbSet<Shop_Bases> Shop_Base { get; set; }
+        //public DbSet<Shop_Bases> Shop_Base { get; set; }
+        public DbSet<Supplys> Supply { get; set; }
         public AppContext()
         {   
             //Database.EnsureDeleted();
@@ -24,8 +26,9 @@ namespace Market_Core
         {
             //Configure domain classes using modelBuilder here   
 
-            modelBuilder.Entity<Shop_Bases>()
-                .HasKey(o => new { o.id_shop, o.id_bases });
+            modelBuilder.Entity<Shops>()
+                .HasKey(o => new { o.id_shop, o.id_department, o.id_product });
+           
         }
         //protected override void OnModelCreating(ModelBuilder mb)
         //{
@@ -34,7 +37,7 @@ namespace Market_Core
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=DESKTOP-8MNL6GQ\SQLEXPRESS;Database=db_taa_Market; Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-8MNL6GQ\SQLEXPRESS;Database=db_Market; Trusted_Connection=True;");
 
         }
     }

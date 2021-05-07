@@ -1,0 +1,17 @@
+﻿<Window x:Class="Market_Core.View.QueryPriceProduct"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Market_Core.View"
+        mc:Ignorable="d"
+        Title="QueryPriceProduct" Height="450" Width="800">
+    <Grid>
+        <DataGrid ItemsSource="{Binding}" x:Name="QueryDataGrid" Margin="32,144,280,75"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,69,0,0" Text="Отобразить розничную и оптовую цену продукта" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <ComboBox Name="ComboboxProduct" HorizontalAlignment="Left" Margin="627,172,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="627,144,0,0" Text="Выберите продукт" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button Content="Отобразить" HorizontalAlignment="Left" Margin="633,353,0,0" VerticalAlignment="Top" Height="38" Width="95" Click="Button_Click"/>
+
+    </Grid>
+</Window>

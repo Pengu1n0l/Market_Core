@@ -1,0 +1,15 @@
+﻿<Window x:Class="Market_Core.View.QueryProductMarket"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Market_Core.View"
+        mc:Ignorable="d"
+        Title="Query" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,65,0,0" Text="Отобразить продукт в магазине меньше 200  " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <DataGrid Name="dataGride_Show" Margin="65,108,38,107"/>
+        <Button Content="Отобразить" HorizontalAlignment="Left" Margin="621,361,0,0" VerticalAlignment="Top" Height="36" Width="83" Click="Button_Click"/>
+
+    </Grid>
+</Window>
